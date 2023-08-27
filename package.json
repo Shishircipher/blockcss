@@ -1,0 +1,19 @@
+{
+  "name": "blockstart",
+  "version": "1.0.0",
+  "description": "A CSS file for doing initial layouts quickly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server -d -c-1 public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shishircipher/blockstart"
+  },
+  "author": "Shishir",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
