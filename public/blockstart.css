@@ -1,0 +1,31 @@
+.debug {
+  border: 2px solid red;
+}
+:root {
+  --color-border: hsl(0, 0%, 0%);
+  --border-radius: 5px;
+  --text: 0;
+  --value: 9;
+  --value-scale: 12%;
+  --pad: 10px;
+  --bottom-margin: 2rem;
+  --w: initial;
+  --h: initial;
+  --value0: hsl(0, 0%, calc(0 * var(--value-scale)));
+  --value1: hsl(0, 0%, calc(1 * var(--value-scale)));
+  --value2: hsl(0, 0%, calc(2 * var(--value-scale)));
+  --value3: hsl(0, 0%, calc(3 * var(--value-scale)));
+  --value4: hsl(0, 0%, calc(4 * var(--value-scale)));
+  --value5: hsl(0, 0%, calc(5 * var(--value-scale)));
+  --value6: hsl(0, 0%, calc(6 * var(--value-scale)));
+  --value7: hsl(0, 0%, calc(7 * var(--value-scale)));
+  --value8: hsl(0, 0%, calc(8 * var(--value-scale)));
+  --value9: hsl(0, 0%, calc(9 * var(--value-scale)));
+  --font-family: "Andale Mono", "Monaco", monospace, monospace;
+  --font-title: "Palatino", serif;
+
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}

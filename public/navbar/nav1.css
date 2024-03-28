@@ -1,0 +1,165 @@
+/* .debug {
+    border: 2px solid red;
+  } */
+  :root {
+    --color-border: hsl(0, 0%, 0%);
+    --border-radius: 5px;
+    --text: 0;
+    --value: 9;
+    --value-scale: 12%;
+    --pad: 10px;
+    --bottom-margin: 2rem;
+    --w: initial;
+    --h: initial;
+    --value0: hsl(0, 0%, calc(0 * var(--value-scale)));
+    --value1: hsl(0, 0%, calc(1 * var(--value-scale)));
+    --value2: hsl(0, 0%, calc(2 * var(--value-scale)));
+    --value3: hsl(0, 0%, calc(3 * var(--value-scale)));
+    --value4: hsl(0, 0%, calc(4 * var(--value-scale)));
+    --value5: hsl(0, 0%, calc(5 * var(--value-scale)));
+    --value6: hsl(0, 0%, calc(6 * var(--value-scale)));
+    --value7: hsl(0, 0%, calc(7 * var(--value-scale)));
+    --value8: hsl(0, 0%, calc(8 * var(--value-scale)));
+    --value9: hsl(0, 0%, calc(9 * var(--value-scale)));
+  }
+  * {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
+  header {
+    width: 100%;
+    height: 50px;
+    /* line-height: 50px; */
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f1c40f;
+    /* border: 2px solid red; */
+}
+  .brand{
+    margin :1rem;
+    float: left;
+    /* border: 2px solid red; */
+  }
+  .menu {
+    height: 100%;
+    width: 60%;
+    float: right;
+    /* border: 2px solid red; */
+}
+
+.menu ul{
+    display: flex;
+    /* height: 50%; */
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    margin :1rem;
+    list-style-type: none;
+    text-decoration: none;
+    /* border: 2px solid red; */
+}
+#menuToggle {
+    display: none;
+    /* border: 2px solid red; */
+}
+.menu-icon {
+    display: none;
+    /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+        background-color: #f1c40f;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    }
+    .menu ul a {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
+
+button {
+    --value: 7;
+    --text: 0;
+  
+    background-color: hsl(0, 0%, calc(var(--value) * var(--value-scale)));
+    color: hsl(0, 0%, calc(var(--text) * var(--value-scale)));
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+  button:hover {
+    filter: brightness(90%);
+  }
+  
+  [style*="--aspect-ratio"] {
+    aspect-ratio: var(--aspect-ratio);
+  }
+
+  blockstart .debug {
+      border: 2px solid red;
+  }
+   blockstart .debug > *{
+      border: 2px solid blue;
+  }
+
+  blockstart .border {
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+  blockstart shape {
+    /* --value: 2;
+    --text: 9;
+    --pad: 1rem;
+  
+    color: hsl(0, 0%, calc(var(--text) * var(--value-scale)));
+    background-color: hsl(0, 0%, calc(var(--value) * var(--value-scale))); */
+    display: flex;
+    width: var(--w);
+    min-width: var(--w);
+    max-width: var(--w);
+    height: var(--h);
+    min-height: var(--h);
+    max-height: var(--h);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: pad;
+  } 

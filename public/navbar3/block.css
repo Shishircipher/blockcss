@@ -1,0 +1,30 @@
+/* nav {
+    display: flex;
+}
+nav li {
+    display: inline-block;
+    justify-content: space-around;
+} */
+html{
+    width: min-content;
+    height: max-content;
+}
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    position: relative;
+    text-align: left;
+}

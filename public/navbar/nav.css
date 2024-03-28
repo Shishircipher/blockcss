@@ -1,0 +1,44 @@
+*{
+    background-image: url(./background-crew-tablet.jpeg);
+}
+.logo{
+    margin: 2rem;
+}
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.primary-header{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primary-navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-navigation a{
+    text-decoration: none;
+}
+
+.primary-navigation a span {
+    font-weight: 700;
+    margin-inline-end: 0.75rem;
+}
+
+@media(min-width: 35em){
+    .primary-navigation{
+        --gap: 2em;
+        position: fixed;
+        inset: 0 0 0 30%;
+        /* padding: 10rem 2em; */
+        padding: min(30vh, 10rem) 2em;
+        flex-direction: column;
+        /* background-color: steelblue; */
+        background: hsl(0 0% 100%  /0.1);
+        backdrop-filter: blur(1rem);
+    }
+}

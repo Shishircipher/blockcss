@@ -1,0 +1,42 @@
+
+body * {
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    display: flex;
+  justify-content: center;
+}
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100%;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 90;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    position: relative;
+    text-align: left;
+  }
+
+  /* Nav Dropdown */
+nav ul li ul {
+   
+    display: none;
+    height: auto;
+    left: -2px;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 1.7rem;
+    white-space: nowrap;
+    width: auto;
+  }
